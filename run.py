@@ -18,7 +18,11 @@ def check_capacity(max_capacity: int, guests: list) -> bool:
 if __name__ == "__main__":
     # Чтение входных данных
     max_capacity = int(input())
-    n = int(input())
+    s = input()
+    if s:
+        n = int(s)
+    else:
+        n = int(input())
 
     guests = []
     for _ in range(n):
